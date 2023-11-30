@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="searchbar" placeholder="Enter City Name">
+            <button onclick="getGeoData()">Search</button>
+            <div class="search-box">
+                <button onclick="getUserLocation()">Use My Location</button>
+            </div>
+        </div>
+      
+        <div class="dashboard">
+            <div id="Today" class="day-panel">
+                <h2>Today</h2>
+                <p><span class="date"></span></p>
+                <p>Sunrise: <span class="sunrise"></span></p>
+                <p>Sunset: <span class="sunset"></span></p>
+                <p>Dawn: <span class="dawn"></span></p>
+                <p>Dusk: <span class="dusk"></span></p>
+                <p>Day Length: <span class="daylength"></span></p>
+                <p>Solar Noon: <span class="solarnoon"></span></p>
+                <p>Time Zone: <span class="timezone"></span></p>
+            </div>
+           
+            <div id="Tomorrow" class="day-panel">
+                <h2>Tomorrow</h2>
+                <p><span class="date"></span></p>
+                <p>Sunrise: <span class="sunrise"></span></p>
+                <p>Sunset: <span class="sunset"></span></p>
+                <p>Dawn: <span class="dawn"></span></p>
+                <p>Dusk: <span class="dusk"></span></p>
+                <p>Day Length: <span class="daylength"></span></p>
+                <p>Solar Noon: <span class="solarnoon"></span></p>
+                <p>Time Zone: <span class="timezone"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

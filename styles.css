@@ -1,0 +1,95 @@
+body {
+    font-family: Arial;
+    background-color: #e8eff5; /* Soft blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #c1cad4; /* Subtle border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #4a90e2; /* Bright blue background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 70%;
+    border: 1px solid #c1cad4;
+    border-radius: 4px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Vibrant blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.dashboard {
+    background: #f8f9fa; /* Light grey background */
+    border-radius: 8px;
+}
+
+.day-panel {
+    margin-bottom: 20px;
+    background: #ffffff; /* White background for panels */
+    padding: 15px;
+    border: 1px solid #c1cad4; /* Subtle border for panels */
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.day-panel h2 {
+    color: #333333; /* Dark text for headings */
+    margin-bottom: 10px;
+}
+
+.day-panel p {
+    color: #555555; /* Slightly lighter text for content */
+}
+.search-box button {
+    padding: 10px 20px;
+    margin: 5px; /* Added margin for spacing between buttons */
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .day-panel {
+        flex-basis: 100%; /* Each panel takes full width on smaller screens */
+    }
+}
